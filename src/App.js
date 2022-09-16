@@ -1,15 +1,21 @@
-import logo from './logo.svg';
+import React from "react";
+import { Router, Link } from "@reach/router"
+
 import './App.css';
+import Home from "./Home";
+import Uniswap from "./Uniswap";
+
+let HomeRoute = () => <Home/>
+let UniswapRoute = () => <Uniswap/>
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>
-          <iframe
-            className="iframe"
-            src={"https://app.sigmacomputing.com/embed/1-1gxjAXZWXgWQYjxVD13m5w"}/>
-        </p>
+        <Router>
+          <HomeRoute path="/"/>
+          <UniswapRoute path="/uniswap"/>
+        </Router>
       </header>
     </div>
   );
