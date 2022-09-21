@@ -10,14 +10,10 @@ let UniswapRoute = () => <Uniswap/>
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Router>
-          <HomeRoute path="/"/>
-          <UniswapRoute path="/uniswap"/>
-        </Router>
-      </header>
-    </div>
+      <Router>
+        <HomeRoute path="/"/>
+        <UniswapRoute path="/uniswap"/>
+      </Router>
   );
 }
 
