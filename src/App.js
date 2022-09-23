@@ -5,15 +5,17 @@ import "./App.css";
 import CryptoDashboard from "./cryptos/CryptoDashboard";
 import Logo from "./Logo";
 import Home from "./Home";
-import { ALL_CRYPTO } from "./PathConstants";
+import {ALL_CRYPTO, EXPLORE} from "./PathConstants";
 
 function App() {
+  const NAV = ALL_CRYPTO.concat(EXPLORE)
+
   return (
     <div>
       <Logo />
       <nav>
         <Link to="/">Home</Link>
-        {ALL_CRYPTO.map((crypto, key) => {
+        {NAV.map((crypto, key) => {
           return (
             <>
               {" "}

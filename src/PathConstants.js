@@ -138,3 +138,15 @@ export const ALL_COMMUNITIES = [
   COMMUNITIES_ABRACADABRA_MONEY,
   COMMUNITIES_SANTIMENT,
 ];
+
+export const EXPLORE = [
+  {
+    linkName: "Explore All Data",
+    path: "explore",
+    embedUrl: "https://app.sigmacomputing.com/embed/1-5d9N0PBg0KgLEoFdRmMDP5",
+  },
+];
+
+export const EVERYTHING = ALL_CRYPTO.concat(ALL_NFT)
+  .concat(ALL_COMMUNITIES)
+  .concat(EXPLORE);
